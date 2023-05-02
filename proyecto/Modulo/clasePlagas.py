@@ -7,8 +7,6 @@ class ControlPlagas(Producto):
 
     def calcular_precio(self):
         precio_final = self.valor
-        if self.periodo_carencia > 30:
-            precio_final *= 1.05  # aumenta el 5% si el periodo de carencia es mayor a 30 días
         return precio_final
 
 
